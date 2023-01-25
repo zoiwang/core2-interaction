@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Prida;
+    src: url(./font/Prida01Black.otf);
+}
+
+body {
+    text-align: center;
+    margin: auto;
+    background-color: black;
+}
+
+div {
+    border: 6px dotted white;
+}
+
+h1 {
+    font-family: Prida;
+    font-size: 3em;
+    padding-top: 1em;
+    color: white;
+    margin: 0;
+}
+
+.pixel:hover {
+    background-color: white;
+}
+
+#clearDrawing {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.grid-container {
+    background: linear-gradient(84deg, rgb(246, 101, 241) 2%, rgb(249, 244, 122) 33%, rgb(129, 240, 127) 48%, rgb(123, 221, 234) 65%, rgb(248, 114, 154) 81%);
+    margin: auto;
+    display: grid;
+    width: 500px;
+    height: 500px;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}

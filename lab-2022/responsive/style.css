@@ -1,0 +1,358 @@
+@font-face {
+    font-family: 'flowerfont';
+    src: url('./plant-font/flowerfont.woff2') format('woff2'), url('./plant-font/flowerfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(88, 65, 52);
+    color: rgb(139, 173, 69);
+}
+
+h1 {
+    color: rgb(139, 173, 69);
+    padding: 0;
+    font-size: 50px;
+    padding: 2rem;
+    width: 280px;
+    font-family: 'Amatic SC', cursive;
+    line-height: 50px;
+}
+
+h2 {
+    position: absolute;
+    font-size: 18px;
+    top: 11.3em;
+    left: 3%;
+    padding: 1rem;
+    color: #dddda1;
+    font-style: italic;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.flower {
+    position: absolute;
+    font-family: 'flowerfont';
+    font-size: 130px;
+    color: #dddda1;
+    z-index: -1;
+    top: 0.8em;
+    left: 2.3em;
+}
+
+hr {
+    border: 1px solid #dddda1;
+}
+
+main {
+    padding: 2rem;
+    text-align: left;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 22px;
+    font-family: 'Didact Gothic', sans-serif;
+    max-width: fit-content;
+}
+
+@media screen and (min-width: 768px) {
+    @font-face {
+        font-family: 'flowerfont';
+        src: url('./plant-font/flowerfont.woff2') format('woff2'), url('./plant-font/flowerfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'ROLLERALIKA';
+        src: url('./ROLLERALIKA-font/ROLLERALIKA.woff2') format('woff2'), url('./ROLLERALIKA-font/ROLLERALIKA.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    body {
+        margin: 0;
+        background-color: #1a447a;
+        color: #c4d49b;
+    }
+    main {
+        padding: 4rem;
+        text-align: left;
+        font-size: 1.5em;
+        font-family: 'Didact Gothic', sans-serif;
+        line-height: 28px;
+        max-width: fit-content;
+    }
+    hr {
+        border: 1px solid #f76241;
+    }
+    h1 {
+        color: #f76241;
+        padding: 0;
+        font-size: 5em;
+        font-family: 'ROLLERALIKA';
+        padding: 3rem;
+        max-width: 600px;
+        line-height: 70px;
+    }
+    h2 {
+        position: absolute;
+        font-size: 2em;
+        top: 13.3em;
+        left: 2%;
+        padding: 3rem;
+        color: #c4d49b;
+        font-family: 'Didact Gothic', sans-serif;
+    }
+    .flower {
+        position: absolute;
+        font-family: 'flowerfont';
+        font-size: 150px;
+        color: #f76241;
+        z-index: -1;
+        top: 2.3em;
+        left: 3.6em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    @font-face {
+        font-family: 'flowerfont';
+        src: url('./plant-font/flowerfont.woff2') format('woff2'), url('./plant-font/flowerfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Bodoni';
+        src: url('./Bodoni-font/Bodoni.woff2') format('woff2'), url('./Bodoni-font/Bodoni.woff2') format('woff');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+    }
+    body {
+        margin: 0;
+        background-color: #1a7a6c;
+        color: #bef5a7;
+    }
+    header {
+        padding: 1rem;
+    }
+    hr {
+        border: 1px solid #ffbe00;
+    }
+    main {
+        position: absolute;
+        top: 35%;
+        padding: 7.5rem;
+        text-align: center;
+        font-size: 22px;
+        font-family: 'Didact Gothic', sans-serif;
+        line-height: 24px;
+        width: fit-content;
+    }
+    h1 {
+        position: absolute;
+        color: #ffbe00;
+        padding: 1rem;
+        left: 28%;
+        text-align: right;
+        font-size: 60px;
+        line-height: 60px;
+        width: 2000px;
+        font-family: 'Bodoni';
+    }
+    h2 {
+        position: absolute;
+        font-size: 28px;
+        top: 22%;
+        left: 56%;
+        padding: 6rem;
+        color: #bef5a7;
+        font-family: 'Bodoni';
+    }
+    .flower {
+        position: absolute;
+        font-family: 'flowerfont';
+        font-size: 220px;
+        color: #ffbe00;
+        z-index: -1;
+    }
+    #one {
+        top: 10%;
+        left: 100px;
+        transform: scale(-1, 1);
+    }
+    #two {
+        left: 100px;
+        top: 10%;
+        transform: scale(-1, 1);
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        margin: 0;
+        background-color: #c0236c;
+        color: #53f7ef;
+    }
+    header {
+        padding: 1rem;
+    }
+    hr {
+        border: 1px solid #ffea00;
+    }
+    main {
+        position: absolute;
+        top: 40%;
+        padding: 3rem;
+        text-align: left;
+        font-size: 1.6em;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 30px;
+    }
+    h1 {
+        position: absolute;
+        color: #ffea00;
+        padding: 0 2rem;
+        left: 28%;
+        text-align: center;
+        font-size: 55px;
+        line-height: 60px;
+        width: 2000px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+    h2 {
+        position: absolute;
+        font-size: 28px;
+        top: 25%;
+        left: 36%;
+        padding: 6rem;
+        color: #5de5de;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .flower {
+        position: absolute;
+        font-family: 'flowerfont';
+        font-size: 220px;
+        color: #ffea00;
+        z-index: -1;
+    }
+    #one {
+        top: 1rem;
+        left: 4.9rem;
+    }
+    #two {
+        transform: scale(-1, 1);
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        margin: 0;
+        background-color: #bd572c;
+        color: #6df7d9;
+    }
+    h1 {
+        color: #c8e58d;
+        padding: 0 2rem;
+        font-size: 35px;
+        line-height: 35px;
+        padding: 1rem;
+        width: 200px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    h2 {
+        position: absolute;
+        font-size: 23px;
+        top: 8.5em;
+        left: 1%;
+        padding: 0 1rem;
+        color: #6df7d9;
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-bottom: 1em;
+    }
+    .flower {
+        position: absolute;
+        font-family: 'flowerfont';
+        font-size: 80px;
+        color: #c8e58d;
+        z-index: -1;
+        top: 1.5em;
+        left: 2.2em;
+    }
+    hr {
+        border: 1px solid rgb(178, 197, 139);
+    }
+    main {
+        padding: 1rem;
+        text-align: left;
+        font-size: 23px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 26px;
+        font-family: 'Didact Gothic', sans-serif;
+    }
+    @media screen and (min-width: 768px) {
+        @font-face {
+            font-family: 'flowerfont';
+            src: url('./plant-font/flowerfont.woff2') format('woff2'), url('./plant-font/flowerfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'ROLLERALIKA';
+            src: url('./ROLLERALIKA-font/ROLLERALIKA.woff2') format('woff2'), url('./ROLLERALIKA-font/ROLLERALIKA.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        body {
+            margin: 0;
+            background-color: rgb(26, 68, 122);
+            color: rgb(139, 182, 38);
+        }
+        main {
+            padding: 0 3rem;
+            text-align: left;
+            font-size: 1.8em;
+            font-family: 'Didact Gothic', sans-serif;
+            line-height: 28px;
+            max-width: fit-content;
+        }
+        hr {
+            border: 1px solid rgb(206, 78, 56);
+        }
+        h1 {
+            color: rgb(206, 78, 56);
+            font-size: 5em;
+            font-family: 'ROLLERALIKA';
+            padding: 0 3rem;
+            max-width: 600px;
+            line-height: 70px;
+        }
+        h2 {
+            position: absolute;
+            font-size: 2em;
+            top: 13.3em;
+            left: 2%;
+            padding: 3rem;
+            color: rgb(139, 182, 38);
+            font-family: 'Didact Gothic', sans-serif;
+        }
+        .flower {
+            position: absolute;
+            font-family: 'flowerfont';
+            font-size: 150px;
+            color: rgb(206, 78, 56);
+            z-index: -1;
+            top: 2.3em;
+            left: 3.5em;
+        }
+    }
+}

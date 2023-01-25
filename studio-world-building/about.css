@@ -1,0 +1,124 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    font-size: 0.96rem;
+}
+
+header {
+    text-align: center;
+    padding: 0;
+}
+
+ul {
+    padding: 5rem 14rem;
+    margin: 0;
+    text-align: left;
+    list-style: none;
+}
+
+.navigation {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    padding: .5rem 0rem;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    margin-left: 3rem;
+}
+
+.navigation li {
+    display: inline-block;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
+
+.underline {
+    color: red;
+    text-decoration: 1px solid red;
+    font-size: 0.9rem;
+}
+
+.navigation li {
+    display: inline-block;
+    position: relative;
+}
+
+.navigation li:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2.5px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navigation li:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+main {
+    font-size: 0.96rem;
+    padding-top: 21rem;
+    padding-left: 28rem;
+}
+
+.part-one {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden;
+    font-size: 0.96em;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    /* keeps content in one line */
+    animation: typing 4s steps(40, end), blink-caret .75s step-end;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.part-two {
+    color: #fff;
+    font-family: monospace;
+    font-size: 0.96em;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid white;
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    -webkit-animation: typing 4s steps(40, end), blink-caret 1s step-end;
+    -webkit-animation-delay: 4s;
+    -webkit-animation-fill-mode: both;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: white;
+    }
+}

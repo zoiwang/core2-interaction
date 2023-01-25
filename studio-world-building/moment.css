@@ -1,0 +1,137 @@
+    body {
+        background-color: black;
+    }
+    
+    li:hover {
+        color: #c21a1a;
+    }
+    
+    header {
+        text-align: center;
+        padding: 0;
+    }
+    
+    ul {
+        padding: 5rem 14rem;
+        margin: 0;
+        text-align: left;
+        list-style: none;
+    }
+    
+    ol {
+        padding: 13em 0em;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        list-style: none;
+        font-size: 1.3em;
+        line-height: 2em;
+    }
+    
+    #one {
+        animation: name-of-one 5s forwards;
+    }
+    
+    #two {
+        animation: name-of-two 15s forwards;
+    }
+    
+    #three {
+        animation: name-of-two 20s forwards;
+    }
+    
+    #one:hover {
+        font-size: 2em;
+        line-height: 2em;
+    }
+    
+    #two:hover {
+        font-size: 2em;
+        line-height: 2em;
+    }
+    
+    #three:hover {
+        font-size: 2em;
+        line-height: 2em;
+    }
+    
+    @keyframes name-of-one {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes name-of-two {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes name-of-three {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .navigation {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        padding: .5rem 0rem;
+        display: flex;
+        justify-content: space-around;
+        text-transform: uppercase;
+        margin-left: 3rem;
+        font-size: 0.96rem;
+    }
+    
+    .navigation li {
+        display: inline-block;
+        position: relative;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    a:hover {
+        color: red;
+    }
+    
+    .underline {
+        color: red;
+        text-decoration: 1px solid red;
+        font-size: 0.9rem;
+    }
+    
+    .navigation li {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .navigation li:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2.5px;
+        bottom: 0;
+        left: 0;
+        background-color: red;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    
+    .navigation li:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }

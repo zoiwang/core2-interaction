@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'AkzidenzGrotesk';
+    src: url('./font/akzidenz-grotesk/AkzidenzGrotesk-Black.woff2') format('woff2'), url('./font/akzidenz-grotesk/AkzidenzGrotesk-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+img {
+    border-style: inset;
+}
+
+h1 {
+    font-family: 'AkzidenzGrotesk';
+    font-weight: 900;
+    padding-left: 3em;
+    font-size: 1.52em;
+}
+
+.one {
+    width: 13em;
+    position: absolute;
+    top: 5.8%;
+    left: 77.5%;
+    z-index: -2;
+    border: 2px solid white;
+}
+
+.two {
+    width: 31.8em;
+    position: absolute;
+    top: 16%;
+    left: 5.5%;
+    z-index: -2;
+}
+
+.three {
+    border: 2px solid white;
+    width: 12em;
+    position: absolute;
+    top: 110%;
+    left: 5.5%;
+    z-index: -2;
+}
+
+.four {
+    width: 12em;
+    position: absolute;
+    top: 165%;
+    left: 5.5%;
+    z-index: -2;
+    border: 2px solid white;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    background: rgb(194, 188, 177);
+    color: white;
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 1em;
+    padding-left: 4em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+article {
+    font-family: 'AkzidenzGrotesk';
+    font-weight: 900;
+    padding-top: 5.6em;
+    padding-left: 5.5em;
+    padding-right: 1.8em;
+    margin: 0;
+    font-size: 5em;
+    z-index: 2;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #be6e44;
+}
+
+.geeks {
+    width: 100%;
+    height: 2.5px;
+    background-color: red;
+    position: absolute;
+    z-index: -1;
+}
+
+.geeks::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    animation: animate 15s linear forwards;
+}
+
+#one-h {
+    top: 52%;
+    left: 0%;
+    transform: rotate(180deg);
+}
+
+#two-h {
+    top: 30%;
+    left: 0%;
+}
+
+#three-h {
+    top: 5%;
+    left: 0%;
+    transform: rotate(180deg);
+}
+
+#four-h {
+    top: 15%;
+    left: 0%;
+}
+
+#five-h {
+    top: 89%;
+    left: 0%;
+}
+
+#six-h {
+    top: 79.5%;
+    left: 0%;
+    transform: rotate(180deg);
+}
+
+@keyframes animate {
+    0% {
+        right: 0;
+    }
+    100% {
+        left: 100%;
+    }
+    0% {
+        left: 0%;
+    }
+}
+
+.roatateline {
+    width: 2.5px;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    z-index: -1;
+}
+
+#one-v {
+    top: 0%;
+    left: 5%;
+    height: 202%;
+}
+
+#two-v {
+    top: 0%;
+    left: 15%;
+    height: 85%;
+}
+
+#three-v {
+    top: 0%;
+    left: 20%;
+    height: 65%;
+}
+
+#four-v {
+    top: 0%;
+    left: 64.8%;
+    height: 70%;
+}
+
+#five-v {
+    top: 0%;
+    left: 30.6%;
+    height: 182%;
+}
+
+#six-v {
+    top: 0%;
+    left: 75%;
+    height: 88%;
+}
+
+#seven-v {
+    top: 0%;
+    left: 41%;
+    height: 112%;
+}
+
+#eight-v {
+    top: 0%;
+    left: 55.4%;
+    height: 142%;
+}
+
+#nine-v {
+    top: 0%;
+    left: 82%;
+    height: 170%;
+}
+
+#ten-v {
+    top: 0%;
+    left: 92.5%;
+    height: 42%;
+}

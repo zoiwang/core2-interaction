@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'Humanoid straight';
+    src: url('./font/pack/Humanoidstraight.woff2') format('woff2'), url('./font/pack/Humanoidstraight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Humanoid';
+    src: url('./font/pack/Humanoid.woff2') format('woff2'), url('./font/pack/Humanoid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Digital-7 Mono';
+    src: url('./font/pack/Digital-7Mono.woff2') format('woff2'), url('/font/pack/Digital-7Mono.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Balls on the rampage';
+    src: url('./font/pack/Ballsontherampage.woff2') format('woff2'), url('./font/pack/Ballsontherampage.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'pacman';
+    src: url('./font/pacman.ttf');
+}
+
+#letter {
+    font-family: 'Balls on the rampage';
+    font-size: 5rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #ffbcd4;
+    background-color: rgb(16, 16, 16);
+}
+
+
+/* input {
+    font-size: 2em;
+    margin: 3em 6em;
+    color: #ED3276;
+    background-color: #ED3276;
+    text-transform: uppercase;
+    list-style-type: none;
+    width: 3rem;
+} */
+
+.calculator-grid {
+    position: absolute;
+    border: 10px solid #ED3276;
+    border-style: ridge;
+    padding: 0;
+    margin: 1.6rem 2.5rem;
+    border-radius: 2rem;
+    height: 83vh;
+    width: 93%;
+    z-index: -1;
+    background: -webkit-linear-gradient( left, #FF8412 0%, #ED3276 25%, #2AB8D7 50%, #36CE00 75%, #FF8412 100%) repeat;
+    animation: masked 5s linear infinite;
+}
+
+h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    padding-top: 15rem;
+    text-align: center;
+}
+
+.background-block {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100vh;
+}
+
+.block1 {
+    background-color: #36CE00;
+    margin: 0;
+}
+
+.block2 {
+    background-color: #2AB8D7;
+    margin: 0;
+}
+
+.block3 {
+    background-color: #ED3276;
+    margin: 0;
+}
+
+.block4 {
+    background-color: #FF8412;
+    margin: 0;
+}
+
+.calculating {
+    font-family: 'Humanoid';
+    font-size: 2.1em;
+    position: absolute;
+    right: 3rem;
+    bottom: 1.9rem;
+    background: -webkit-linear-gradient( left, #FF8412 0%, #ED3276 25%, #2AB8D7 50%, #36CE00 100%) repeat;
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    animation: masked 8s linear infinite;
+    animation: masked 8s linear infinite;
+    animation: masked 8s linear infinite;
+}
+
+@keyframes masked {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -8000px 1000px;
+    }
+}
+
+.element {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    margin: 6rem 10rem;
+}
+
+
+/* input {
+    font-size: 2em;
+    margin: 3em 6em;
+    color: #ED3276;
+    background-color: #ED3276;
+    text-transform: uppercase;
+    list-style-type: none;
+    width: 3rem;
+} */
+
+
+/* !!!!!!!!!!!!! THE NEW*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+button {
+    border-radius: 30px;
+    text-decoration: none;
+    border: 10px solid #ED3276;
+    border-style: outset;
+    display: inline-block;
+}
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 20.6rem);
+    grid-template-rows: minmax(140px, auto) repeat(5, 103px);
+}
+
+.calculator-grid>button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px, solid #ED3276;
+    outline: none;
+    background-color: #ED3276;
+    font-size: 4.5em;
+    font-family: 'pacman';
+    color: #ffa6c7;
+    color: black;
+}
+
+.calculator-grid>button:hover {
+    background-color: transparent;
+    color: #ffafcc;
+    /* color: black; */
+}
+
+.span-two {
+    grid-column: span 2;
+    color: #adf802;
+    background-color: #ED3276;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-operand {
+    color: black;
+    padding-top: 1rem;
+    font-size: 3.5rem;
+}
+
+.output .current-operand {
+    color: black;
+    font-size: 8rem;
+}
+
+.previous-operand {
+    font-family: 'pacman';
+}
+
+.current-operand {
+    font-family: 'Balls on the rampage';
+}
+
+@media screen and (max-width: 767px) {
+    .calculating {
+        font-size: 1.3em;
+        right: 1rem;
+        bottom: 1rem;
+    }
+    button {
+        border-radius: 20px;
+        text-decoration: none;
+        border: 5px solid #ED3276;
+        border-style: outset;
+        display: inline-block;
+    }
+    .calculator-grid {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: repeat(4, 7rem);
+        grid-template-rows: minmax(140px, auto) repeat(5, 99px);
+    }
+    .calculator-grid>button {
+        cursor: pointer;
+        font-size: 2em;
+        border: 1px, solid #ED3276;
+        outline: none;
+        background-color: #ED3276;
+        font-family: 'pacman';
+        color: #ffa6c7;
+        color: black;
+    }
+    .output .previous-operand {
+        color: black;
+        padding-top: 1rem;
+        font-size: 2.5rem;
+    }
+    .output .current-operand {
+        color: black;
+        font-size: 6.5rem;
+    }
+    .calculator-grid {
+        border: 10px solid #ED3276;
+        border-style: ridge;
+        padding: 0;
+        margin: 0rem 2.5rem;
+        border-radius: 2rem;
+        height: 83vh;
+        width: 90%;
+        z-index: -1;
+        background: -webkit-linear-gradient( left, #FF8412 0%, #ED3276 25%, #2AB8D7 50%, #36CE00 75%, #FF8412 100%) repeat;
+        animation: masked 5s linear infinite;
+    }
+}

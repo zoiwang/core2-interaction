@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'EctoBlaster';
+    src: url('./font/EctoBlaster.woff2') format('woff2'), url('./font/EctoBlaster.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stretch Pro';
+    src: url('./font/StretchProRegular.woff2') format('woff2'), url('./font/StretchProRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: #0b1b07;
+}
+
+h1 {
+    color: white;
+    padding-top: 8rem;
+    padding-left: 3rem;
+    font-size: 1.5rem;
+    font-family: 'Stretch Pro';
+}
+
+.cross {
+    width: 1.5rem;
+    height: auto;
+    padding: 0.5rem 0.5rem;
+}
+
+.depress {
+    text-decoration: underline;
+}
+
+.depress:hover {
+    font-style: italic;
+    color: rgb(245, 7, 7);
+    font-size: 3rem;
+    line-height: 5rem;
+    text-transform: uppercase;
+    font-family: 'EctoBlaster';
+    text-decoration: none;
+}
+
+.bubble {
+    position: absolute;
+    width: 6rem;
+    height: auto;
+    cursor: pointer;
+    transform: rotate(30deg)
+}
+
+#reverse-derection {
+    transform: rotate(-20deg)
+}
+
+#reverse-derection-2 {
+    transform: rotate(-50deg)
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: white;
+    }
+    h1 {
+        color: black;
+        padding-top: 13.5rem;
+        text-align: center;
+        font-size: 3.8rem;
+        font-family: 'Stretch Pro';
+    }
+    .depress:hover {
+        font-size: 10rem;
+        color: rgb(245, 7, 7);
+    }
+    .bubble {
+        position: absolute;
+        width: 12rem;
+        height: auto;
+        cursor: pointer;
+        transform: rotate(30deg)
+    }
+}

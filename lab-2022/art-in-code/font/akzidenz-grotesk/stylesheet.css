@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'AkzidenzGrotesk';
+    src: url('AkzidenzGrotesk-Bold.woff2') format('woff2'),
+        url('AkzidenzGrotesk-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AkzidenzGrotesk';
+    src: url('AkzidenzGrotesk-Roman.woff2') format('woff2'),
+        url('AkzidenzGrotesk-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

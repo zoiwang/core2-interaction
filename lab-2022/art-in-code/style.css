@@ -1,0 +1,268 @@
+@font-face {
+    font-family: 'AkzidenzGrotesk';
+    src: url('./font/akzidenz-grotesk/AkzidenzGrotesk-Roman.woff2') format('woff2'), url('./font/akzidenz-grotesk/AkzidenzGrotesk-Roman.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AkzidenzGrotesk';
+    src: url('./font/akzidenz-grotesk/AkzidenzGrotesk-Bold.woff2') format('woff2'), url('./font/akzidenz-grotesk/AkzidenzGrotesk-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AkzidenzGrotesk';
+    src: url('./font/akzidenz-grotesk/AkzidenzGrotesk-Black.woff2') format('woff2'), url('./font/akzidenz-grotesk/AkzidenzGrotesk-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NeueHaasGroteskText Pro';
+    src: url('./font/NHaasGrotesk/NHaasGroteskTXPro-55Rg.woff2') format('woff2'), url('./font/NHaasGrotesk/NHaasGroteskTXPro-55Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+img {
+    border-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+body {
+    padding: 1rem;
+    margin: 0;
+    background-color: #080808;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    padding: 1rem 1rem;
+    margin: 0;
+    font-family: 'AkzidenzGrotesk';
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 1em;
+    padding: 0rem 1rem;
+    font-family: 'AkzidenzGrotesk';
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.5em;
+    padding-top: 0em;
+    padding-left: 0em;
+    color: #b1a586;
+    font-family: 'AkzidenzGrotesk';
+    font-weight: 900;
+}
+
+h4 {
+    text-decoration: underline;
+    padding-top: 0;
+    margin: 0;
+}
+
+h4:hover {
+    color: #282320;
+}
+
+.image-artist {
+    width: 92%;
+    padding: 1rem;
+}
+
+.image {
+    display: flex;
+    width: 94%;
+    margin: 0;
+    padding: 1rem 1rem;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+li {
+    list-style: none;
+}
+
+article {
+    padding: 0 1rem;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.caption {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 1em 0em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#caption-one {
+    padding-left: 1em;
+}
+
+@media only screen and (min-width: 992px) {
+    @font-face {
+        font-family: 'AkzidenzGrotesk';
+        src: url('./font/akzidenz-grotesk/AkzidenzGrotesk-Roman.woff2') format('woff2'), url('./font/akzidenz-grotesk/AkzidenzGrotesk-Roman.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'AkzidenzGrotesk';
+        src: url('./font/akzidenz-grotesk/AkzidenzGrotesk-Bold.woff2') format('woff2'), url('./font/akzidenz-grotesk/AkzidenzGrotesk-Bold.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'AkzidenzGrotesk';
+        src: url('./font/akzidenz-grotesk/AkzidenzGrotesk-Black.woff2') format('woff2'), url('./font/akzidenz-grotesk/AkzidenzGrotesk-Black.woff') format('woff');
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+    }
+    a {
+        text-decoration: none;
+        color: #282320;
+    }
+    a:hover {
+        color: #7f7152;
+        text-decoration: underline;
+    }
+    img {
+        border-style: inset;
+        border-radius: 0px;
+    }
+    body {
+        color: #7f7152;
+        background: linear-gradient(304deg, rgba(235, 233, 230, 1) 6%, rgb(194, 188, 177) 48%, rgba(235, 233, 230, 1) 91%);
+    }
+    h1 {
+        font-size: 6em;
+        padding: 2rem 2rem;
+        font-family: 'AkzidenzGrotesk';
+    }
+    h3 {
+        font-size: 1.2rem;
+        padding: 0rem 2rem;
+        font-family: 'AkzidenzGrotesk';
+        font-weight: 900;
+    }
+    h4 {
+        text-decoration: underline;
+        padding-top: 0;
+        margin: 0;
+    }
+    h4:hover {
+        color: #282320;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    h2 {
+        margin: 0;
+        font-size: 1.5em;
+        padding-bottom: 1em;
+        padding-left: 0em;
+        margin: 0;
+        color: #be6e44;
+        font-family: 'AkzidenzGrotesk';
+        font-weight: 900;
+    }
+    article {
+        font-size: 1.3em;
+        padding: 2em 2em;
+        line-height: 1.3em;
+        color: #282320;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    span {
+        color: #be6e44;
+    }
+    main {
+        margin: 0;
+        padding: 4em 0;
+    }
+    .information-artist {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .information-maman {
+        padding-top: 2em;
+    }
+    .image-artist {
+        padding: 0;
+        height: 40em;
+        margin-top: 2em;
+        margin-left: 2em;
+        margin-right: 0.5em;
+    }
+    .image {
+        display: flex;
+        width: 80%;
+        margin: 0;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 2em;
+    }
+    footer {
+        padding: 2em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .caption {
+        position: absolute;
+        font-weight: bold;
+        color: #7f7152;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+    }
+    #caption-one {
+        top: 58em;
+        padding: 0 2em;
+        width: 10em;
+    }
+    #caption-two {
+        top: 101.5em;
+        right: 4.5em;
+        width: 10em;
+    }
+    #caption-three {
+        top: 153em;
+        right: 4.5em;
+        width: 10em;
+    }
+}

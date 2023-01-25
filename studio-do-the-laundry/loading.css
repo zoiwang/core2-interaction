@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'Humanoid straight';
+    src: url('./font/pack/Humanoidstraight.woff2') format('woff2'), url('./font/pack/Humanoidstraight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Humanoid';
+    src: url('./font/pack/Humanoid.woff2') format('woff2'), url('./font/pack/Humanoid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Balls on the rampage';
+    src: url('./font/pack/Ballsontherampage.woff2') format('woff2'), url('./font/pack/Ballsontherampage.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'pacman';
+    src: url('./font/pacman.ttf');
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: rgb(234, 234, 234);
+}
+
+.container {
+    position: absolute;
+    background-color: black;
+    border: 10px solid rgb(129, 129, 129);
+    border-style: ridge;
+    padding: 0;
+    margin: 1.6rem 2.5rem;
+    border-radius: 2rem;
+    height: 83vh;
+    width: 94%;
+}
+
+h1 {
+    color: black;
+    background-color: white;
+    font-family: 'Humanoid straight';
+    letter-spacing: 0.5rem;
+    font-size: 2em;
+    padding: 0.8rem 0;
+    text-align: center;
+    border: 6px solid white;
+    border-style: outset;
+    margin: 3rem 34rem;
+    border-radius: 25px;
+}
+
+h1:hover {
+    font-family: 'Humanoid';
+    color: white;
+    background-color: rgb(30, 30, 30);
+    cursor: pointer;
+}
+
+.smileface {
+    color: white;
+    color: linear-gradient(84deg, rgba(255, 132, 18, 1) 0%, rgba(237, 50, 118, 1) 33%, rgba(42, 184, 215, 1) 66%, rgba(54, 206, 0, 1) 100%);
+    font-size: 20em;
+    text-align: center;
+    padding-top: 6rem;
+    font-family: 'pacman';
+    animation: blinker 1s step-start infinite;
+    animation-delay: 0s;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+body {
+    background-color: rgb(16, 16, 16);
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Humanoid straight';
+    font-size: 3.5em;
+    position: absolute;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border: 4.5px solid white;
+    border-style: outset;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 2.2em;
+    border-radius: 10px;
+    width: 25px;
+    height: 25px;
+    /* margin: 8rem 0; */
+    position: absolute;
+    top: 1.5rem;
+    left: 59rem;
+}
+
+.background-block {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100vh;
+}
+
+.block1 {
+    background-color: rgb(80, 80, 80);
+    margin: 0;
+}
+
+.block2 {
+    background-color: rgb(179, 179, 179);
+    margin: 0;
+}
+
+.block3 {
+    background-color: rgb(125, 125, 125);
+    margin: 0;
+}
+
+.block4 {
+    background-color: rgb(192, 192, 192);
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        color: black;
+        background-color: white;
+        font-family: 'Humanoid straight';
+        letter-spacing: 0.5rem;
+        font-size: 2em;
+        padding: 0.8rem 0;
+        text-align: center;
+        border: 6px solid white;
+        border-style: outset;
+        margin: 3rem 5rem;
+        border-radius: 25px;
+    }
+}

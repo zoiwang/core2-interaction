@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Ogg';
+    src: url('./font/Ogg/OggLightItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: red;
+    color: white;
+    font-family: monospace;
+    max-width: 100vh;
+    animation: change-background 6s forwards;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+
+.tab {
+    font-size: 1rem;
+    position: fixed;
+    top: 30px;
+    border: 1px solid white;
+    padding: 0.3rem;
+}
+
+ul {
+    max-width: fit-content;
+    margin: 0;
+    text-align: left;
+    list-style: none;
+}
+
+.time {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    top: 10px;
+    left: 49%;
+    font-size: 1.5rem;
+    right: 50px;
+    top: 20px;
+}
+
+.line {
+    margin: 0;
+    margin: 0;
+    position: absolute;
+    top: 10%;
+}
+
+h5 {
+    padding-top: 0em;
+    padding-bottom: 0em;
+    margin: 0;
+    font-size: 1em;
+}
+
+h3 {
+    padding-top: 0em;
+    padding-bottom: 0em;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+h1 {
+    padding-top: 0em;
+    padding-bottom: 0em;
+    margin: 0;
+    font-size: 2em;
+}
+
+#ogbig {
+    text-decoration: 50px dotted black underline;
+}
+
+#ogmedium {
+    text-decoration: 50px dotted black underline;
+}
+
+#big {
+    font-size: 9rem;
+    line-height: 12rem;
+    font-weight: 500;
+    padding: 0rem 16rem;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+#smaller {
+    font-size: 4rem;
+    line-height: 4rem;
+    max-width: fit-content;
+    margin: 0;
+    padding: 2rem 16rem;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+.smaller-two {
+    font-size: 1.5rem;
+    line-height: 1.4rem;
+    margin: 0;
+    padding: 2rem 16rem;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+#one {
+    width: 40em;
+}
+
+#two {
+    width: 40em;
+}
+
+@keyframes change-background {
+    from {
+        background-color: black;
+    }
+    to {
+        background-color: #c21a1a;
+    }
+}
+
+h2 {
+    line-height: 1px;
+    font-style: italic;
+    position: absolute;
+    top: 330px;
+    left: 360px;
+    font-size: 33px;
+    color: black;
+    transform: rotate(55deg);
+}
+
+.comment {
+    position: absolute;
+    width: 155px;
+    font-size: 1rem;
+    color: black;
+    line-height: 16px;
+    padding: 1rem;
+}
+
+#comment-1 {
+    right: 13px;
+    top: 550px;
+}
+
+#comment-2 {
+    left: 13px;
+    top: 30px;
+}
+
+.writer {
+    position: absolute;
+    font-size: 20px;
+    font-size: 3rem;
+    color: black;
+    right: 50px;
+    top: 480px;
+    font-weight: bold;
+}

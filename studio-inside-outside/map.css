@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'BD Geminis';
+    src: url('./font/BDGeminis.woff2') format('woff2'), url('./font/BDGeminis.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('./font/Orbitron-Regular.woff2') format('woff2'), url('./font/Orbitron-Regular.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: rgb(202, 202, 202);
+}
+
+img {
+    opacity: 95%;
+    width: 55rem;
+    padding: 6rem 16rem;
+    z-index: -1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #FF0000;
+}
+
+nav {
+    display: flex;
+    /* position: fixed;
+    width: 85rem; */
+    flex-direction: row;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    margin: 0;
+    z-index: 1;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 1.3rem;
+    border: 2px solid #FF0000;
+}
+
+h1 {
+    color: #FF0000;
+    font-family: 'BD Geminis';
+    font-size: 2.8em;
+    text-align: center;
+}
+
+h2 {
+    color: #FF0000;
+    font-family: 'BD Geminis';
+    font-size: 10rem;
+    text-align: center;
+}
+
+main {
+    background-color: #600000;
+    height: 300vh;
+}
+
+ul {
+    list-style-type: none;
+    color: black;
+    font-family: 'Orbitron';
+    display: flex;
+}
+
+li {
+    background-color: red;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 0.2em;
+    border: 1.5px solid black;
+}

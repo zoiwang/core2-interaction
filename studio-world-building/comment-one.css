@@ -1,0 +1,81 @@
+            body {
+                color: #c21a1a;
+                font-family: monospace;
+                max-width: 100vh;
+                animation: change-background 10s forwards
+            }
+            
+            main {
+                animation: change-text 10s forwards
+            }
+            
+            a {
+                text-decoration: none;
+                color: #c21a1a;
+            }
+            
+            @keyframes change-background {
+                from {
+                    background-color: #c21a1a;
+                }
+                to {
+                    background-color: black;
+                }
+            }
+            
+            h3 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.5em;
+            }
+            
+            .block {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .review {
+                width: 20em;
+                font-size: 0.9rem;
+                position: absolute;
+            }
+            
+            .review:hover {
+                width: 40em;
+                color: white;
+            }
+            
+            #review-one {
+                top: 1em;
+                left: 4em;
+            }
+            
+            #review-two {
+                top: 1em;
+                right: 25em;
+            }
+            
+            #review-three {
+                top: 19em;
+                left: 25em;
+            }
+            
+            #review-four {
+                top: 19em;
+                right: 5em;
+            }
+            
+            #review-five {
+                bottom: 1em;
+                left: 4em;
+            }
+            
+            #review-six {
+                bottom: 1em;
+                right: 25em;
+            }
+            
+            .cap {
+                font-size: 0.7em;
+                font-family: Arial, Helvetica, sans-serif;
+            }

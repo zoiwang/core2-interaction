@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+
+<body>
+    <h1>MY BOOKSHELF!</h1>
+    <main>
+        <nav id="shelf" class="shelf"></nav>
+
+        <article id="book-detail" class="book-detail hidden">
+            <section class="figure">
+                <img class="cover-image">
+            </section>
+            <section class="info">
+                <h2 class="title"></h2>
+                <p class="description"></p>
+                <a class="more" href="https://www.cs.princeton.edu/~bwk/tpop.webpage/">Learn More</a>
+            </section>
+        </article>
+    </main>
+    <script src="./lib/airtable.browser.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

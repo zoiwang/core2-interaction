@@ -1,0 +1,131 @@
+@font-face{
+    src: url(fonts/BreadleySans-Regular.ttf);
+    font-family: BreadleySans;
+}
+@font-face{
+    src: url(fonts/AmoreKiena.ttf);
+    font-family: AmoreKiena;
+}
+.canvas{
+    position:relative;
+    width:100vh;
+}
+.container{
+    position:absolute;
+    width:918px;
+    height:1300px;
+    border: 8px dotted white;
+    left:230px;
+    background-color: white;
+    opacity: 40%;
+    border-radius: 20px;
+    z-index: 1;
+    top:25px;
+    z-index: -1;
+}
+body{
+    position:relative;
+    margin:0px;
+    padding:0px;
+    font-family: BreadleySans;
+    color:rgb(73, 73, 73);
+    background-color: rgb(245, 219, 102);
+}
+.image1{
+    position:absolute;
+    top:43px;
+    left:-9px;
+    z-index: -2;
+}
+.image2{
+    position:absolute;
+    top:-116px;
+    right:-800px;
+    z-index: -2;
+    transform: rotate(--5deg);
+}
+h1{
+    position:absolute;
+    left:290px;
+    top:28px;
+    font-family: BreadleySans;
+    font-weight: bold;
+    font-size:80px;
+    width:806px;
+    text-align: center;
+    line-height: 60px;
+    kerning: 30px;
+    word-spacing: 2px;
+    color:rgb(56, 54, 54);
+}
+.line1{
+    position:absolute;
+    top:217px;
+    left: 300px;
+    border-top: 5px solid white;
+    width:780px;
+    border-radius: 50px;
+}
+.line2{
+    position:absolute;
+    top:308px;
+    left: 300px;
+    border-top: 5px solid white;
+    border-radius: 50px;
+    width:780px;
+}
+.discription{
+    position:absolute;
+    width:700px;
+    top:208px;
+    left:342px;
+    text-align: center;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 20px;
+}
+.time{
+    position:absolute;
+    top:186px;
+    left:970px;
+    font-size: 22px;
+    width:400px;
+}
+ul{
+    position:absolute;
+    top:420px;
+    left:634px;
+    font-size:18px;
+    color:rgb(92, 91, 91);
+    line-height: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    width:400px;
+}
+ol{
+    position:absolute;
+    top:931px;
+    left:282px;
+    font-size:18px;
+    line-height: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    width:780px;
+    text-align: justify;
+}
+.heading{
+    color:black;
+    background-color: white;
+    border-radius: 30px;
+    font-size:30px;
+}
+#ingredient{
+    position:absolute;
+    top:437px;
+    left:435px;
+    font-weight: bold;
+}
+#instruction{
+    position:absolute;
+    top:860px;
+    left:630px;
+    font-weight: bold;
+}

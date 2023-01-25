@@ -1,0 +1,83 @@
+@font-face {
+    font-family: Prida;
+    src: url(./font/Prida01Black.otf);
+}
+
+body {
+    background-color: #eff2f4;
+    cursor: grab;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 3rem;
+    margin: 0;
+    font-size: 6em;
+    color: #FF8C3C;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: rgb(83, 83, 83);
+}
+
+h2 {
+    padding-top: 5rem;
+    text-align: center;
+    margin: 0;
+    font-size: 1.4em;
+    color: #F0BC25;
+    font-family: serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.content {
+    border: 6px solid white;
+    width: 17em;
+    height: 4em;
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+    overflow: scroll;
+    padding: 0rem 6rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    margin-left: 16.8rem;
+    color: white;
+    font-family: Prida;
+    background: linear-gradient(84deg, rgb(246, 101, 241) 2%, rgb(249, 244, 122) 33%, rgb(129, 240, 127) 48%, rgb(123, 221, 234) 65%, rgb(248, 114, 154) 81%);
+}
+
+.count {
+    text-align: center;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #F0BC25;
+    /* text-transform: uppercase; */
+}
+
+#demo {
+    color: #FF8C3C;
+    font-size: 4em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    ;
+}
+
+.droptarget {
+    float: left;
+    width: 100px;
+    height: 35px;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}

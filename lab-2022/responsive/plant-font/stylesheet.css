@@ -1,0 +1,9 @@
+@font-face {
+    font-family: '101! Floral Designs 3';
+    src: url('101FloralDesigns3.woff2') format('woff2'),
+        url('101FloralDesigns3.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

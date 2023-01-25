@@ -1,0 +1,188 @@
+    @font-face {
+        src: url(fonts/Catilde\ light.otf);
+        font-family: catilde;
+    }
+    
+    .line1 {
+        background-color: black;
+        position: absolute;
+        width: 90%;
+        left: 2rem;
+        height: 2px;
+        justify-content: center;
+        margin: 0;
+        border: 0;
+        padding: 0;
+        top: 3rem;
+    }
+    /*     
+    .line2 {
+        background-color: black;
+        position: absolute;
+        width: 88%;
+        height: 1.3px;
+        margin: 0;
+        padding: 0;
+        top: 8rem;
+        justify-content: center;
+    } */
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        background-color: rgb(255, 133, 154);
+        font-size: 30px;
+        margin: 0;
+        padding: 3rem;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding: 0 78rem;
+        border: 0;
+        width: 3.5em;
+    }
+    
+    .name {
+        font-family: monospace;
+        position: absolute;
+        font-size: 0.7em;
+        margin: 0;
+        padding: 0;
+        top: 0.8rem;
+        left: 3rem;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    
+    h3 {
+        position: absolute;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 0.7em;
+        border: 2px solid black;
+        text-align: center;
+        transition: width 2s, height 2s, transform 2s;
+    }
+    
+    #studio {
+        top: 4rem;
+        right: 9rem;
+    }
+    
+    #studio:hover {
+        background-color: black;
+        color: rgb(255, 133, 154);
+        font-size: 1em;
+        transform: rotate(360deg);
+        top: 3rem;
+        right: 7rem;
+    }
+    
+    #lab {
+        top: 4rem;
+        right: 20rem;
+    }
+    
+    #lab:hover {
+        background-color: black;
+        color: rgb(255, 133, 154);
+        font-size: 1em;
+        transform: rotate(360deg);
+        top: 3rem;
+        right: 18rem;
+    }
+    
+    h1 {
+        margin: 0;
+        padding-top: 2rem;
+        color: black;
+        font-size: 6.5em;
+        line-height: 0.9em;
+        font-family: Arial, Helvetica, sans-serif;
+        animation: fadeIn linear 3s;
+    }
+    
+    #italic {
+        font-family: serif;
+        font-style: italic;
+        color: rgb(255, 208, 216);
+    }
+    
+    #italic:hover {
+        color: white;
+    }
+    
+    .line-one {
+        overflow: hidden;
+        animation: slide-in-one 1.5s ease-in;
+        animation-delay: 0s;
+    }
+    
+    .line-two {
+        overflow: hidden;
+        animation: slide-in-two 1.5s ease-in;
+        animation-delay: 0.3s;
+    }
+    
+    .line-three {
+        overflow: hidden;
+        animation: slide-in-three 1.5s ease-in;
+        animation-delay: 0.6s;
+    }
+    
+    @keyframes slide-in-one {
+        0% {
+            transform: translateY(200%);
+        }
+        100% {
+            transform: translateY(0%);
+        }
+    }
+    
+    @keyframes slide-in-two {
+        0% {
+            transform: translateY(200%);
+        }
+        100% {
+            transform: translateY(0%);
+        }
+    }
+    
+    @keyframes slide-in-three {
+        0% {
+            transform: translateY(200%);
+        }
+        100% {
+            transform: translateY(0%);
+        }
+    }
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    footer {
+        font-size: 0.5em;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10rem 0;
+    }

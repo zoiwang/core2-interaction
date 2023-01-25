@@ -1,0 +1,85 @@
+            @font-face {
+                font-family: 'BD Geminis';
+                src: url('./font/BDGeminis.woff2') format('woff2'), url('./font/BDGeminis.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+                font-display: swap;
+            }
+            
+            @font-face {
+                font-family: 'Orbitron';
+                src: url('./font/Orbitron-Regular.woff2') format('woff2'), url('./font/Orbitron-Regular.woff') format('woff');
+                font-weight: 600;
+                font-style: normal;
+                font-display: swap;
+            }
+            
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+            
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: white;
+            }
+            
+            h1 {
+                font-family: 'BD Geminis';
+                text-align: center;
+                font-size: 5em;
+                margin-top: 3.2em;
+                margin-left: 25rem;
+                padding: 0.2em 0.5em;
+                /* border: 3px solid black; */
+                width: fit-content;
+            }
+            
+            h2 {
+                font-family: 'Orbitron';
+                text-align: center;
+                font-size: 1.6em;
+                padding: 0.2em 0.5em;
+                margin-top: 3rem;
+                margin-left: 42rem;
+                border: 3px solid black;
+                width: fit-content;
+            }
+            
+            h2:hover {
+                background-color: red;
+            }
+            
+            #scroll-text {
+                font-family: 'Orbitron';
+                width: fit-content;
+                background-color: black;
+                position: absolute;
+                bottom: 0;
+                color: white;
+                font-size: 1.2em;
+                width: max-content;
+                transform: translateX(100%);
+                padding: 0.5rem;
+                animation: my-animation 30s linear infinite;
+            }
+            
+            #text-container {
+                margin: 0;
+                padding: 0;
+                height: 2.5em;
+                width: 100%;
+                background-color: black;
+                position: absolute;
+                bottom: 0;
+            }
+            
+            @keyframes my-animation {
+                from {
+                    transform: translateX(75%);
+                }
+                to {
+                    transform: translateX(-100%);
+                }
+            }

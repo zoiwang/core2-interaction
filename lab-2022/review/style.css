@@ -1,0 +1,79 @@
+body {
+    /* position:absolute; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(252, 201, 60);
+    color: white;
+    text-align: center;
+}
+
+img {
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 20px;
+    width: 600px;
+}
+
+h1 {
+    margin: 1rem 0;
+    padding: 2rem 1rem;
+    color: #2a9faa;
+    font-size: 5em;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+s .whatuse {
+    /* position:absolute; */
+    top: 120px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.wt {
+    margin: 0 8rem;
+    background-color: #6cd0b7;
+    border: 5px solid #2a9faa;
+    border-radius: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #f4fffd;
+    font-size: 2.8em;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+ul {
+    margin: 1rem 8rem;
+    padding-top: 2em;
+    color: rgb(203, 149, 0);
+    list-style: square;
+    margin-bottom: 1rem;
+}
+
+li {
+    font-size: 1.6em;
+    line-height: 1.3em;
+}
+
+li:hover {
+    color: #f4fffd;
+}
+
+.list {
+    /* background-color: #DCB6F2; */
+    font-size: 16px;
+}
+
+.datext {
+    /* background-color: #DCB6F2; */
+    font-size: 16px;
+    text-align: center;
+    /* width:300px; */
+}

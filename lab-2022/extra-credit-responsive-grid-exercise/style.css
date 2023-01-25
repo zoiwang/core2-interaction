@@ -1,0 +1,274 @@
+body {
+    background-color: black;
+}
+
+.container {
+    height: 100vh;
+}
+
+.white-square {
+    position: absolute;
+    background-color: #e9e7dc;
+    width: 48em;
+    height: 48em;
+    transform: rotate(45deg);
+    top: 2rem;
+    left: 3.5rem;
+    z-index: -1;
+    animation-name: spin;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.small-square {
+    position: absolute;
+    background-color: aquamarine;
+    width: 1.2em;
+    height: 1.2em;
+    transform: rotate(45deg);
+    z-index: 1;
+    animation-name: spin;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+/* 
+@keyframes run {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 50%;
+    }
+    51% {}
+    99% {
+        left: 0;
+    }
+    100% {
+        left: 0;
+    }
+} */
+
+#black-one {
+    background-color: black;
+    top: 35em;
+    left: 15em;
+}
+
+#black-two {
+    background-color: black;
+    top: 32em;
+    left: 35em;
+    /* animation: linear infinite;
+    animation-name: run;
+    animation-duration: 8s; */
+}
+
+#black-three {
+    background-color: black;
+    top: 45em;
+    left: 28em;
+}
+
+#red-one {
+    background-color: #a23e39;
+    top: 44em;
+    left: 29em;
+}
+
+#red-two {
+    background-color: #a23e39;
+    top: 28em;
+    left: 39em;
+}
+
+#red-three {
+    background-color: #a23e39;
+    top: 12em;
+    left: 39em;
+}
+
+#yellow-one {
+    background-color: #e4b952;
+    top: 14em;
+    left: 37em;
+}
+
+#yellow-two {
+    background-color: #e4b952;
+    top: 33em;
+    left: 34em;
+}
+
+#yellow-three {
+    background-color: #e4b952;
+    top: 39em;
+    left: 34em;
+}
+
+#blue-one {
+    background-color: #3364ba;
+    top: 30em;
+    left: 20em;
+}
+
+#blue-two {
+    background-color: #3364ba;
+    top: 46em;
+    left: 21em;
+}
+
+#blue-three {
+    background-color: #3364ba;
+    top: 26em;
+    left: 47em;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+main {
+    color: #e9e7dc;
+    font-family: sans-serif;
+    text-align: left;
+    padding-top: 2rem;
+    padding-left: 75rem;
+    width: 9.5rem;
+    margin: 0;
+    z-index: 2;
+    font-size: 0.9em;
+    line-height: 1em;
+}
+
+h1 {
+    position: absolute;
+    color: #e9e7dc;
+    font-family: sans-serif;
+    padding-top: 12.6rem;
+    padding-left: 68.9rem;
+    width: 20rem;
+    font-size: 1.6em;
+}
+
+#musica {
+    color: #d2a94a;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #9a9caa;
+    }
+    .white-square {
+        position: absolute;
+        background-color: #e9e7dc;
+        padding: 0 .1rem;
+        width: 25em;
+        height: 25em;
+        z-index: -1;
+    }
+    main {
+        color: black;
+        font-family: sans-serif;
+        text-align: left;
+        padding: 26em 4em;
+        width: 20rem;
+        margin: 0;
+        z-index: 2;
+        font-size: 1.3em;
+        line-height: 1.05em;
+    }
+    .small-square {
+        position: absolute;
+        background-color: aquamarine;
+        width: 0.8em;
+        height: 0.8em;
+        z-index: 1;
+        animation-name: spin;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    h1 {
+        position: absolute;
+        color: #a23e39;
+        font-family: sans-serif;
+        padding: 23.7em 2.6em;
+        width: 10em;
+        font-size: 2em;
+    }
+    #musica {
+        color: black;
+    }
+    #black-one {
+        background-color: black;
+        top: 3em;
+        left: 15em;
+    }
+    #black-two {
+        background-color: black;
+        top: 10em;
+        left: 20em;
+        /* animation: linear infinite;
+    animation-name: run;
+    animation-duration: 8s; */
+    }
+    #black-three {
+        background-color: black;
+        top: 13em;
+        left: 23em;
+    }
+    #red-one {
+        background-color: #a23e39;
+        top: 25em;
+        left: 15em;
+    }
+    #red-two {
+        background-color: #a23e39;
+        top: 16em;
+        left: 22em;
+    }
+    #red-three {
+        background-color: #a23e39;
+        top: 14em;
+        left: 25em;
+    }
+    #yellow-one {
+        background-color: #e4b952;
+        top: 14em;
+        left: 20em;
+    }
+    #yellow-two {
+        background-color: #e4b952;
+        top: 18em;
+        left: 10em;
+    }
+    #yellow-three {
+        background-color: #e4b952;
+        top: 23em;
+        left: 20em;
+    }
+    #blue-one {
+        background-color: #3364ba;
+        top: 18em;
+        left: 16em;
+    }
+    #blue-two {
+        background-color: #3364ba;
+        top: 14em;
+        left: 6em;
+    }
+    #blue-three {
+        background-color: #3364ba;
+        top: 19em;
+        left: 25em;
+    }
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'ROLLERALIKA';
+    src: url('ROLLERALIKA-Regular.woff2') format('woff2'),
+        url('ROLLERALIKA-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

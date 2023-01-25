@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'BD Geminis';
+    src: url('./font/BDGeminis.woff2') format('woff2'), url('./font/BDGeminis.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('./font/Orbitron-Regular.woff2') format('woff2'), url('./font/Orbitron-Regular.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+img {
+    width: 300px;
+    height: 290px;
+}
+
+body {
+    background-color: rgb(202, 202, 202);
+    /* background-color: black; */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #FF0000;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    width: 85.3rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    height: 3.5rem;
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 1.3rem;
+    border: 3px solid black;
+    background-color: white;
+}
+
+h1 {
+    color: black;
+    font-family: 'BD Geminis';
+    font-size: 3em;
+}
+
+h2 {
+    color: black;
+    font-family: 'BD Geminis';
+    font-size: 2.2em;
+}
+
+.navbox-fact {
+    margin: 0;
+    border-left: 3px solid black;
+    height: 5rem;
+    width: 1rem;
+    position: absolute;
+    right: 8rem;
+    top: 0rem;
+}
+
+main {
+    background-color: black;
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr 2fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+    row-gap: 20px;
+    background-color: black;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: black;
+    border: 1.5px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+.grid-item:hover {
+    background-color: white;
+}
+
+#item-one {
+    background-color: #ffe016;
+}
+
+#item-two {
+    background-color: #4ef0ff;
+}
+
+#item-three {
+    background-color: #bbff73;
+}
+
+#item-four {
+    background-color: #ffd0cf;
+}
+
+#item-five {
+    background-color: #abc0bc;
+}
+
+#item-six {
+    background-color: #ff95d1;
+}
+
+#item-seven {
+    background-color: #459f54;
+}
+
+#item-eight {
+    background-color: #f63632;
+}
+
+#item-nine {
+    background-color: #6c7a3b;
+}
+
+#item-ten {
+    background-color: #ddd6fd;
+}
+
+#item-eleven {
+    background-color: #f6f1b1;
+}
+
+#item-twelve {
+    background-color: #1978bd;
+}
+
+#item-thirteen {
+    background-color: #48c8c0;
+}
+
+#item-fourteen {
+    background-color: #6041ea;
+}
+
+#item-fifteen {
+    background-color: #BAFFB4;
+}
+
+#item-sixteen {
+    background-color: #f6f8e1;
+}
+
+#item-seventeen {
+    background-color: #f0aa39;
+}
+
+#item-eighteen {
+    background-color: #bd45d0;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    padding: 1em 0em;
+    margin: 0;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.info {
+    font-family: 'Orbitron';
+    font-size: 0.6em;
+    padding-top: 12rem;
+    text-align: center;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-around;
+        height: 5rem;
+        margin: 0;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        padding-left: 2rem;
+        padding-right: 1.3rem;
+        border: 2px solid black;
+        background-color: white;
+    }
+    h1 {
+        color: black;
+        font-family: 'BD Geminis';
+        font-size: 2.3em;
+    }
+    h2 {
+        color: black;
+        font-family: 'BD Geminis';
+        font-size: 2.2em;
+    }
+}

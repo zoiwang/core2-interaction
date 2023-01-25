@@ -1,0 +1,801 @@
+    body {
+        padding: 0px;
+        margin: 0px;
+        cursor: pointer;
+    }
+    
+    .container {
+        position: relative;
+        background-color: black;
+        height: 100vh;
+        animation: changingbackground 15s infinite;
+    }
+    
+    @keyframes changingbackground {
+        0% {
+            background-color: #ff626f;
+        }
+        25% {
+            background-color: #8ae723;
+        }
+        50% {
+            background-color: #626fff;
+        }
+        75% {
+            background-color: #e223e7;
+        }
+        100% {
+            background-color: #ff626f;
+        }
+    }
+    
+    .square {
+        position: absolute;
+        width: 47%;
+        height: 48%;
+        border: 3px solid black;
+        border-radius: 10px;
+    }
+    
+    #topleft {
+        top: 0%;
+        left: 2%;
+        background-color: #ff626f;
+        overflow: auto;
+        resize: both;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    #topright {
+        top: 0%;
+        right: 2%;
+        background-color: #8ae723;
+        overflow: auto;
+        resize: both;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    #bottomleft {
+        bottom: 0%;
+        left: 2%;
+        background-color: #626fff;
+        overflow: auto;
+        resize: both;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    #bottomright {
+        bottom: 0%;
+        right: 2%;
+        background-color: #e223e7;
+        overflow: auto;
+        resize: both;
+        max-width: 100%;
+        max-height: 100%;
+        z-index: 2;
+    }
+    
+    .windowbar {
+        width: 100%;
+        height: 5%;
+        border-radius: 5px;
+    }
+    
+    #windowbar1 {
+        background-color: #b2444d;
+    }
+    
+    #windowbar2 {
+        background-color: #60a118;
+    }
+    
+    #windowbar3 {
+        background-color: #4e58cc;
+    }
+    
+    #windowbar4 {
+        background-color: #9e18a1;
+    }
+    
+    .close {
+        position: absolute;
+        color: red;
+        font-family: sans-serif;
+        font-weight: bold;
+        left: 15px;
+        font-size: 15px;
+        top: 2px;
+        height: 15px;
+        text-align: center;
+        width: 15px;
+        background-color: black;
+        border-radius: 3px;
+    }
+    
+    .avatars {
+        position: absolute;
+        background-color: black;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 2.5px solid grey;
+    }
+    
+    #avatar1 {
+        top: 15%;
+        left: 6%;
+        background-color: #64e08f;
+    }
+    
+    #avatar12 {
+        top: 45%;
+        left: 6%;
+        background-color: #64e08f;
+    }
+    
+    #avatar13 {
+        top: 75%;
+        left: 6%;
+        background-color: #64e08f;
+    }
+    
+    #avatar2 {
+        top: 15%;
+        left: 6%;
+        background-color: #ff754d;
+    }
+    
+    #avatar22 {
+        top: 45%;
+        left: 6%;
+        background-color: #ff754d;
+    }
+    
+    #avatar23 {
+        top: 75%;
+        left: 6%;
+        background-color: #ff754d;
+    }
+    
+    #avatar3 {
+        top: 15%;
+        left: 6%;
+        background-color: #fff262;
+    }
+    
+    #avatar32 {
+        top: 45%;
+        left: 6%;
+        background-color: #fff262;
+    }
+    
+    #avatar33 {
+        top: 75%;
+        left: 6%;
+        background-color: #fff262;
+    }
+    
+    #avatar4 {
+        top: 15%;
+        left: 6%;
+        background-color: #58e5d9;
+    }
+    
+    #avatar42 {
+        top: 45%;
+        left: 6%;
+        background-color: #58e5d9;
+    }
+    
+    #avatar43 {
+        top: 75%;
+        left: 6%;
+        background-color: #58e5d9;
+    }
+    
+    .text1 {
+        position: absolute;
+        font-family: monospace;
+        font-size: 20px;
+        left: 23%;
+        border-radius: 3px;
+        /* animation: typingone 10s steps(100), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden; */
+    }
+    
+    @keyframes typingone {
+        from {
+            width: 0%
+        }
+        to {
+            width: 60%
+        }
+    }
+    
+    @keyframes blink {
+        50% {
+            border-color: transparent
+        }
+    }
+    
+    .time1 {
+        position: absolute;
+        font-family: monospace;
+        font-size: 13px;
+        right: 3%;
+        /* animation: blink-animation 0.8s steps(5, start) infinite;
+        -webkit-animation: blink-animation 0.8s steps(5, start) infinite; */
+    }
+    
+    .time1:hover {
+        color: black;
+        animation: blink-animation 0.5s steps(5, start) infinite;
+        -webkit-animation: blink-animation 0.8s steps(5, start) infinite;
+    }
+    
+    @keyframes blink-animation {
+        to {
+            visibility: hidden;
+        }
+    }
+    
+    @-webkit-keyframes blink-animation {
+        to {
+            visibility: hidden;
+        }
+    }
+    
+    #line1 {
+        position: absolute;
+        top: 20%;
+        background-color: #64e08f;
+        color: #ff626f;
+        background: linear-gradient(to top, #64e08f 50%, #ff626f 50%);
+        background-size: 100% 200%;
+        background-position: top;
+        transition: all 0.8s ease-out;
+    }
+    
+    #line1:hover {
+        background-color: #ff626f;
+        transform: scale(1.1);
+        background-position: bottom;
+    }
+    
+    #line2 {
+        position: absolute;
+        top: 50%;
+        background-color: #64e08f;
+        color: #ff626f;
+        background: linear-gradient(to top, #64e08f 50%, #ff626f 50%);
+        background-size: 100% 200%;
+        background-position: top;
+        transition: all 0.8s ease-out;
+    }
+    
+    #line2:hover {
+        background-color: #ff626f;
+        transform: scale(1.1);
+        background-position: bottom;
+    }
+    
+    #line3 {
+        position: absolute;
+        top: 80%;
+        background-color: #64e08f;
+        /* animation: typingone 10s steps(100), blink .5s step-end infinite alternate;
+    animation-delay: 2s;
+    white-space: nowrap;
+    overflow: hidden; */
+        color: #ff626f;
+        background: linear-gradient(to top, #64e08f 50%, #ff626f 50%);
+        background-size: 100% 200%;
+        background-position: top;
+        transition: all 0.8s ease-out;
+    }
+    
+    #line3:hover {
+        background-color: #ff626f;
+        transform: scale(1.1);
+        background-position: bottom;
+    }
+    
+    #time1 {
+        position: absolute;
+        top: 21%;
+        color: #ff626f;
+    }
+    
+    #time1:hover {
+        color: black;
+    }
+    
+    #time2 {
+        position: absolute;
+        top: 51%;
+        color: #ff626f;
+    }
+    
+    #time2:hover {
+        color: black;
+    }
+    
+    #time3 {
+        position: absolute;
+        top: 81%;
+        color: #ff626f;
+    }
+    
+    #time3:hover {
+        color: black;
+    }
+    
+    #line12 {
+        position: absolute;
+        top: 20%;
+        background-color: #ff754d;
+        color: #8ae723;
+        background: linear-gradient(to top, #ff754d 50%, #8ae723 50%);
+        background-size: 100% 200%;
+        background-position: top;
+        transition: all 0.8s ease-out;
+    }
+    
+    #line12:hover {
+        background-color: #ff626f;
+        transform: scale(1.1);
+        background-position: bottom;
+    }
+    
+    #line22 {
+        position: absolute;
+        top: 50%;
+        background-color: #ff754d;
+        color: #8ae723;
+        background: linear-gradient(to top, #ff754d 50%, #8ae723 50%);
+        background-size: 100% 200%;
+        background-position: top;
+        transition: all 0.8s ease-out;
+    }
+    
+    #line22:hover {
+        background-color: #ff626f;
+        transform: scale(1.1);
+        background-position: bottom;
+    }
+    
+    #line32 {
+        position: absolute;
+        top: 80%;
+        background-color: #ff754d;
+        color: #8ae723;
+        background: linear-gradient(to top, #ff754d 50%, #8ae723 50%);
+        background-size: 100% 200%;
+        background-position: top;
+        transition: all 0.8s ease-out;
+    }
+    
+    #line32:hover {
+        background-color: #ff626f;
+        transform: scale(1.1);
+        background-position: bottom;
+    }
+    
+    #time12 {
+        position: absolute;
+        top: 21%;
+        color: #8ae723;
+    }
+    
+    #time12:hover {
+        color: black;
+    }
+    
+    #time22 {
+        position: absolute;
+        top: 51%;
+        color: #8ae723;
+    }
+    
+    #time22:hover {
+        color: black;
+    }
+    
+    #time32 {
+        position: absolute;
+        top: 81%;
+        color: #8ae723;
+    }
+    
+    #time32:hover {
+        color: black;
+    }
+    
+    #line13 {
+        position: absolute;
+        top: 20%;
+        background-color: #fff262;
+        color: #626fff;
+        background: linear-gradient(to top, #fff262 50%, #626fff 50%);
+        background-size: 100% 200%;
+        background-position: top;
+        transition: all 0.8s ease-out;
+    }
+    
+    #line13:hover {
+        background-color: #ff626f;
+        transform: scale(1.1);
+        background-position: bottom;
+    }
+    
+    #line23 {
+        position: absolute;
+        top: 50%;
+        background-color: #fff262;
+        color: #626fff;
+        background: linear-gradient(to top, #fff262 50%, #626fff 50%);
+        background-size: 100% 200%;
+        background-position: top;
+        transition: all 0.8s ease-out;
+    }
+    
+    #line23:hover {
+        background-color: #ff626f;
+        transform: scale(1.1);
+        background-position: bottom;
+    }
+    
+    #line33 {
+        position: absolute;
+        background-color: #fff262;
+        top: 80%;
+        color: #626fff;
+        background: linear-gradient(to top, #fff262 50%, #626fff 50%);
+        background-size: 100% 200%;
+        background-position: top;
+        transition: all 0.8s ease-out;
+    }
+    
+    #line33:hover {
+        background-color: #ff626f;
+        transform: scale(1.1);
+        background-position: bottom;
+    }
+    
+    #time13 {
+        position: absolute;
+        top: 21%;
+        color: #626fff;
+    }
+    
+    #time13:hover {
+        color: black;
+    }
+    
+    #time23 {
+        position: absolute;
+        top: 51%;
+        color: #626fff;
+    }
+    
+    #time23:hover {
+        color: black;
+    }
+    
+    #time33 {
+        position: absolute;
+        top: 81%;
+        color: #626fff;
+    }
+    
+    #time33:hover {
+        color: black;
+    }
+    
+    #line14 {
+        position: absolute;
+        top: 20%;
+        background-color: #58e5d9;
+        color: #e223e7;
+        background: linear-gradient(to top, #58e5d9 50%, #e223e7 50%);
+        background-size: 100% 200%;
+        background-position: top;
+        transition: all 0.8s ease-out;
+    }
+    
+    #line14:hover {
+        background-color: #ff626f;
+        transform: scale(1.1);
+        background-position: bottom;
+    }
+    
+    #line24 {
+        position: absolute;
+        top: 50%;
+        background-color: #58e5d9;
+        color: #58e5d9;
+        color: #e223e7;
+        background: linear-gradient(to top, #58e5d9 50%, #e223e7 50%);
+        background-size: 100% 200%;
+        background-position: top;
+        transition: all 0.8s ease-out;
+    }
+    
+    #line24:hover {
+        background-color: #ff626f;
+        transform: scale(1.1);
+        background-position: bottom;
+    }
+    
+    #line34 {
+        position: absolute;
+        top: 80%;
+        background-color: #58e5d9;
+        color: #e223e7;
+        background: linear-gradient(to top, #58e5d9 50%, #e223e7 50%);
+        background-size: 100% 200%;
+        background-position: top;
+        transition: all 0.8s ease-out;
+    }
+    
+    #line34:hover {
+        background-color: #ff626f;
+        transform: scale(1.1);
+        background-position: bottom;
+    }
+    
+    #time14 {
+        position: absolute;
+        top: 21%;
+        color: #e223e7;
+    }
+    
+    #time14:hover {
+        color: black;
+    }
+    
+    #time24 {
+        position: absolute;
+        top: 51%;
+        color: #e223e7;
+    }
+    
+    #time24:hover {
+        color: black;
+    }
+    
+    #time34 {
+        position: absolute;
+        top: 81%;
+        color: #e223e7;
+    }
+    
+    #time34:hover {
+        color: black;
+    }
+    
+    .green1 {
+        position: absolute;
+        top: 10%;
+        left: 4%;
+    }
+    
+    .green2 {
+        position: absolute;
+        top: 40%;
+        left: 4%;
+    }
+    
+    .green3 {
+        position: absolute;
+        top: 70%;
+        left: 4%;
+    }
+    
+    .green1:hover {
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+        animation: shake 0.7s;
+        /* When the animation is finished, start again */
+        animation-iteration-count: infinite;
+        width: 150px;
+    }
+    
+    .green2:hover {
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+        animation: shake 0.7s;
+        /* When the animation is finished, start again */
+        animation-iteration-count: infinite;
+        width: 150px;
+    }
+    
+    .green3:hover {
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+        animation: shake 0.7s;
+        /* When the animation is finished, start again */
+        animation-iteration-count: infinite;
+        width: 150px;
+    }
+    
+    .orange1 {
+        position: absolute;
+        top: 10%;
+        left: 4%;
+    }
+    
+    .orange2 {
+        position: absolute;
+        top: 40%;
+        left: 4%;
+    }
+    
+    .orange3 {
+        position: absolute;
+        top: 70%;
+        left: 4%;
+    }
+    
+    .orange1:hover {
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+        animation: shake 0.7s;
+        /* When the animation is finished, start again */
+        animation-iteration-count: infinite;
+        width: 150px;
+    }
+    
+    .orange2:hover {
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+        animation: shake 0.7s;
+        /* When the animation is finished, start again */
+        animation-iteration-count: infinite;
+        width: 150px;
+    }
+    
+    .orange3:hover {
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+        animation: shake 0.7s;
+        /* When the animation is finished, start again */
+        animation-iteration-count: infinite;
+        width: 150px;
+    }
+    
+    .blue1 {
+        position: absolute;
+        top: 10%;
+        left: 4%;
+    }
+    
+    .blue2 {
+        position: absolute;
+        top: 40%;
+        left: 4%;
+    }
+    
+    .blue3 {
+        position: absolute;
+        top: 70%;
+        left: 4%;
+    }
+    
+    .blue1:hover {
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+        animation: shake 0.7s;
+        /* When the animation is finished, start again */
+        animation-iteration-count: infinite;
+        width: 150px;
+    }
+    
+    .blue2:hover {
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+        animation: shake 0.7s;
+        /* When the animation is finished, start again */
+        animation-iteration-count: infinite;
+        width: 150px;
+    }
+    
+    .blue3:hover {
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+        animation: shake 0.7s;
+        /* When the animation is finished, start again */
+        animation-iteration-count: infinite;
+        width: 150px;
+    }
+    
+    .yellow1 {
+        position: absolute;
+        top: 10%;
+        left: 4%;
+    }
+    
+    .yellow2 {
+        position: absolute;
+        top: 40%;
+        left: 4%;
+    }
+    
+    .yellow3 {
+        position: absolute;
+        top: 70%;
+        left: 4%;
+    }
+    
+    .yellow1:hover {
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+        animation: shake 0.7s;
+        /* When the animation is finished, start again */
+        animation-iteration-count: infinite;
+        width: 150px;
+    }
+    
+    .yellow2:hover {
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+        animation: shake 0.7s;
+        /* When the animation is finished, start again */
+        animation-iteration-count: infinite;
+        width: 150px;
+    }
+    
+    .yellow3:hover {
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+        animation: shake 0.7s;
+        /* When the animation is finished, start again */
+        animation-iteration-count: infinite;
+        width: 150px;
+    }
+    
+    @keyframes shake {
+        0% {
+            transform: translate(1px, 1px) rotate(0deg);
+        }
+        10% {
+            transform: translate(-1px, -2px) rotate(-1deg);
+        }
+        20% {
+            transform: translate(-3px, 0px) rotate(1deg);
+        }
+        30% {
+            transform: translate(3px, 2px) rotate(0deg);
+        }
+        40% {
+            transform: translate(1px, -1px) rotate(1deg);
+        }
+        50% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+        }
+        60% {
+            transform: translate(-3px, 1px) rotate(0deg);
+        }
+        70% {
+            transform: translate(3px, 1px) rotate(-1deg);
+        }
+        80% {
+            transform: translate(-1px, -1px) rotate(1deg);
+        }
+        90% {
+            transform: translate(1px, 2px) rotate(0deg);
+        }
+        100% {
+            transform: translate(1px, -2px) rotate(-1deg);
+        }
+    }
+    /* .intropage {
+        position: absolute;
+        z-index: 4;
+    }
+    
+    .welcome {
+        position: absolute;
+        z-index: 4;
+        font-size: 100px;
+        text-align: center;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        top: 290px;
+        width: 1000px;
+        left: 220px;
+    } */
